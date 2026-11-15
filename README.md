@@ -1,33 +1,32 @@
-# Tout Chariot Android releases
+# Tout Chariot — Android
 
-## Latest: shareholder demonstration 1.3
+[Installer Tout Chariot 1.3.1](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.1/Tout-Chariot-1.3.1.apk)
 
-[Download Tout Chariot Demo 1.3.0 (APK)](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.0-qa/Tout-Chariot-1.3.0-hosted-demo.apk) · [Release notes and verification](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/tag/v1.3.0-qa)
+[Guide et notes de livraison](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/tag/v1.3.1)
 
-Android 7.0 or newer; universal APK for arm64-v8a, armeabi-v7a and x86_64. Internet access is required; no local server is needed. The app connects to the hosted HTTPS backend.
+# Tout Chariot 1.3.1 — Livraison Android
 
-**Installation:** the launcher name is **Tout Chariot Demo**. It installs alongside the earlier 1.2 app, avoiding an update-signature conflict. Do not uninstall the previous app.
+Application connectée au backend hébergé : https://tout-chariot-staging.fly.dev.
 
-**Sign in with the demonstration credentials supplied privately by the project owner.** OTP 1234 is restricted to authorized test accounts. Signup with other phone numbers is not enabled.
+Les services nationaux comprennent Transport, Main-d’œuvre et Location. Les services internationaux comprennent Déménagement international et Transport international. Le catalogue, les véhicules et la tarification sont administrables depuis le tableau de bord.
 
-### Available flows
+Les parcours de réservation, proposition du délai d’arrivée, confirmation du client, réalisation de la prestation, discussion et notifications sont raccordés au backend. Les comptes prestataires et l’assistance disposent de leurs espaces respectifs.
 
-- National: Transport, Labor (Main-d’œuvre), Location. Location replaces Dépannage for new requests.
-- International: International moving and International transport.
-- Eleven cart categories, including Plateau and Semi-remorque.
-- Admin-managed plans, versioned quotes, options, conditional minimums and rental availability.
-- Provider arrival proposal, customer confirmation, job execution and history.
-- Rider/provider chat, Firebase notifications and a five-tab provider workspace.
+## Installation
 
-All five hosted service workflows were checked through completion, including persisted chat and payment guards. The Android demo-package test verified rental confirmation/completion and actual Firebase push delivery. The normal release APK was also installed and signed in through its phone/password UI.
+Téléchargez `Tout-Chariot-1.3.1.apk` et autorisez son installation sur Android. Cette APK cible les téléphones **ARM64**, dont le Pixel 6 Pro. Elle exclut les bibliothèques destinées aux anciens appareils ARM 32 bits et aux émulateurs Intel. Le nom affiché est **Tout Chariot**, avec l’identifiant `com.hsi.toutchariot`.
 
-### Demonstration limits
+Cette livraison utilise la clé disponible sur le poste de compilation, différente de la clé historique encore attendue. Android peut donc refuser la mise à jour de l’ancienne installation. Ne désinstallez pas l’application existante avant d’avoir vérifié la conservation de vos données avec l’équipe technique. Un appareil sans l’ancienne installation peut recevoir cette livraison directement.
 
-Carts and prices are demonstration configurations. PI-SPI remains in sandbox; real payer-approved settlement is not claimed. General public SMS signup and production store signing are not configured. This is a demonstration prerelease, not a commercial production release.
+## Raccordements et mise en service
 
-[SHA-256 checksums](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.0-qa/SHA256SUMS.txt) · [Verification report](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.0-qa/VERIFICATION.md)
+- Les notifications Firebase sont raccordées et ont été vérifiées sur Android.
+- PI-SPI utilise actuellement le simulateur TGD999. Les encaissements réels nécessitent les accès et autorisations de production du participant bancaire.
+- L’envoi de codes par SMS nécessite un fournisseur de production. Les numéros expressément autorisés disposent actuellement du code 1234 ; leurs utilisateurs définissent leur propre mot de passe.
+- L’administration doit valider les tarifs commerciaux, les véhicules et les disponibilités réelles. Le catalogue hébergé contient encore des valeurs de configuration utilisées lors des vérifications.
+- La clé de signature historique et la continuité des données de l’ancien environnement restent à finaliser.
 
-## Previous version
+Ces points ne doivent pas être interprétés comme des encaissements réels déjà activés ou comme une migration de l’ancien environnement déjà effectuée.
 
-[Android QA 1.2](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/tag/v1.2.0-qa) is retained for reference. The APK stored at the repository root is an older build; use the latest release link above for the hosted demonstration.
+Consultez le guide joint pour les instructions d’utilisation et le document de vérification pour le périmètre des contrôles réalisés.
 
