@@ -1,35 +1,33 @@
-# Tout Chariot Android release
+# Tout Chariot Android releases
 
-Public Android releases for Tout Chariot.
+## Latest: shareholder demonstration 1.3
 
-## Download
+[Download Tout Chariot Demo 1.3.0 (APK)](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.0-qa/Tout-Chariot-1.3.0-hosted-demo.apk) · [Release notes and verification](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/tag/v1.3.0-qa)
 
-Download `Tout-Chariot-arm64-v8a-release.apk` for modern 64-bit Android phones.
+Android 7.0 or newer; universal APK for arm64-v8a, armeabi-v7a and x86_64. Internet access is required; no local server is needed. The app connects to the hosted HTTPS backend.
 
-## Verified flow
+**Installation:** the launcher name is **Tout Chariot Demo**. It installs alongside the earlier 1.2 app, avoiding an update-signature conflict. Do not uninstall the previous app.
 
-- Authentication and registration
-- Home page and cart types
-- Documentation, FAQ and address book
-- Support tickets
-- Account page and five-tab navigation
+**Sign in with the demonstration credentials supplied privately by the project owner.** OTP 1234 is restricted to authorized test accounts. Signup with other phone numbers is not enabled.
 
-Build: `1.2 (2003)` using Flutter `3.22.1`
+### Available flows
 
-SHA-256: `965BB7BC370CD0272874A4C648C08CFC4FF758027CD0B9E39EC606005B14BBD1`
+- National: Transport, Labor (Main-d’œuvre), Location. Location replaces Dépannage for new requests.
+- International: International moving and International transport.
+- Eleven cart categories, including Plateau and Semi-remorque.
+- Admin-managed plans, versioned quotes, options, conditional minimums and rental availability.
+- Provider arrival proposal, customer confirmation, job execution and history.
+- Rider/provider chat, Firebase notifications and a five-tab provider workspace.
 
-### Homepage reliability fixes
+All five hosted service workflows were checked through completion, including persisted chat and payment guards. The Android demo-package test verified rental confirmation/completion and actual Firebase push delivery. The normal release APK was also installed and signed in through its phone/password UI.
 
-- Test OTP `1234` is verified by the deployed backend; the APK no longer bypasses server verification.
-- Cart artwork is bundled in the APK and does not depend on missing media URLs.
-- Cart prices remain visible on narrow phone screens.
-- The wallet preview displays cached/default balance immediately while refreshing.
+### Demonstration limits
 
-### Authentication verification
+Carts and prices are demonstration configurations. PI-SPI remains in sandbox; real payer-approved settlement is not claimed. General public SMS signup and production store signing are not configured. This is a demonstration prerelease, not a commercial production release.
 
-Tested from the installed APK on Android on 8 November 2026:
+[SHA-256 checksums](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.0-qa/SHA256SUMS.txt) · [Verification report](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.0-qa/VERIFICATION.md)
 
-- Phone-first registration reached the deployed Render backend.
-- OTP `1234` was accepted by the backend and marked the phone verified.
-- Password creation succeeded after OTP verification.
-- A subsequent password login succeeded and opened the authenticated profile flow.
+## Previous version
+
+[Android QA 1.2](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/tag/v1.2.0-qa) is retained for reference. The APK stored at the repository root is an older build; use the latest release link above for the hosted demonstration.
+
