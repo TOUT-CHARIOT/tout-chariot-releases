@@ -1,22 +1,24 @@
 # FLEET CHARIOT — Android
 
-[Installer FLEET CHARIOT 1.3.6](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.6/FLEET-CHARIOT-1.3.6.apk)
+[Installer FLEET CHARIOT 1.3.7](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/download/v1.3.7/FLEET-CHARIOT-1.3.7.apk)
 
-[Guide et notes de livraison](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/tag/v1.3.6)
+[Guide et notes de livraison](https://github.com/TOUT-CHARIOT/tout-chariot-releases/releases/tag/v1.3.7)
 
-# FLEET CHARIOT 1.3.6
+# FLEET CHARIOT 1.3.7
 
-Le nom FLEET CHARIOT figure désormais dans le logo, l’icône, les écrans de démarrage, les trois images d’accueil et les trois bannières. Les petits logos intégrés aux téléphones et aux vêtements des illustrations ont également été corrigés. Le symbole de roue, les couleurs et la composition générale sont conservés.
+Les formules **Éco, Classic et Premium** sont désormais réservées exclusivement à la main-d’œuvre. Elles ne sont proposées ni pour le transport, ni pour la location, ni pour le déménagement international.
 
-Les icônes Android, iOS et web sont régénérées, ainsi que les images natives de démarrage. Les bannières corrigées sont servies depuis de nouvelles adresses du backend ; les anciennes adresses restent compatibles et servent aussi les visuels FLEET.
+Un chariot et une main-d’œuvre se commandent séparément, avec deux devis et deux suivis distincts. Le bouton « Oui » dans le panneau du chariot ouvre une demande de main-d’œuvre ; il n’ajoute plus de personnel au prix du chariot. Le prix du chariot s’affiche après le choix des adresses sans imposer de réponse à cette question.
 
-Le panneau jaune dépliable, les adresses, l’estimation automatique, le choix Transport / Location et le classement administrable de la 1.3.5 restent disponibles.
+Le barème du chariot reste administrable. La migration reprend les montants de la règle auparavant sélectionnée par défaut ; les formules de personnel restent configurées séparément. Les devis déjà émis conservent leur prix.
+
+Le panneau jaune dépliable, le choix Transport / Location et les visuels FLEET CHARIOT sont conservés.
 
 ## Installation et raccordements
 
-APK ARM64 d’environ 43 Mo. Même identifiant Android et même signature de distribution que les versions 1.3.1 à 1.3.5. La compatibilité avec une ancienne installation signée par le certificat historique nécessite toujours sa clé privée originale.
+APK ARM64 d’environ 43 Mo. Même identifiant Android et même signature de distribution que les versions 1.3.1 à 1.3.6. La compatibilité avec une ancienne installation signée par le certificat historique nécessite toujours sa clé privée originale.
 
-Backend hébergé : https://tout-chariot-staging.fly.dev. PI-SPI reste sur le simulateur TGD999 ; les accès bancaires de production restent à fournir. Le fournisseur SMS reste à raccorder ; les numéros autorisés utilisent actuellement 1234.
+Backend : https://tout-chariot-staging.fly.dev. PI-SPI reste sur le simulateur TGD999 ; les accès bancaires de production restent à fournir. Le fournisseur SMS reste à raccorder ; les numéros autorisés utilisent actuellement 1234.
 
-La livraison publique contient l’APK et ses documents, sans code source. La livraison testée est Android ; les ressources iOS et web ont été mises à jour sans annoncer de nouvelle publication sur ces plateformes.
+La livraison publique contient l’APK et ses documents, sans code source.
 
